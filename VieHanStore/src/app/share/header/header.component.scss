@@ -1,0 +1,125 @@
+body {
+   
+    color: white;
+    background-image: url('../../../assets/img/bannertop.png');
+    /* Ảnh nền */
+    background-size: cover; /* Làm cho ảnh nền phủ kín toàn bộ màn hình */
+    background-position: top; /* Canh giữa ảnh nền */
+    background-repeat: no-repeat; /* Không lặp lại ảnh nền */
+    height: 600px;
+  }
+  
+.navbar-custom {
+    padding: 10px 0;
+}
+.logo img {
+   width: 250px;
+   height: 60px;
+    text-align: center;
+}
+.search-cart {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 15px;
+}
+.search-cart input {
+    width: 100%;
+    border-radius: 20px;
+    padding: 5px 10px;
+    border: none;
+}
+.icon-btn {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 35px;
+}
+/* banner top */
+.product-main {
+    position: relative; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0;
+}
+
+.content-container {
+    position: relative;
+    text-align: center; 
+}
+
+h1 {
+    font-family: 'Anton', sans-serif;
+    font-size: 113px;
+    position: relative; 
+    z-index: 1; 
+}
+
+.product-image {
+    position: relative;
+    width: 600px;
+    height: 600px;
+    display: block;
+  top: -70px;
+}
+
+.product-details {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.product-price {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ff0066;
+    margin-bottom: 15px;
+}
+
+.buy-now-btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #ff0066;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.buy-now-btn:hover {
+    background-color: #cc0052; /* Màu khi hover */
+}
+
+/* Đảm bảo cột bên phải (hình ảnh) căn đúng */
+.col-md-6 {
+    padding: 0 15px;
+}
+
+@media (max-width: 767px) {
+    body {
+        color: white;
+        background-image: url('../../../assets/img/banner_mobile.png');
+        background-size: 100% 300px; /* Giảm chiều cao của ảnh nền xuống 300px */
+        background-position: top; /* Đặt ảnh nền bắt đầu từ phần trên cùng */
+        background-repeat: no-repeat; /* Không lặp lại ảnh nền */
+        height: 200px; /* Đặt chiều cao phần hiển thị là 300px */
+    }
+    
+    .product-main {
+        display: none;
+    }
+
+    .product-image {
+        width: 100%;
+    }
+
+    .product-price {
+        font-size: 20px;
+    }
+
+    .buy-now-btn {
+        font-size: 14px;
+    }
+}
+
